@@ -7,6 +7,7 @@ public class Check {
             if (data[0] != data[i]) {
                 result = false;
                 break;
+
             }
 
         }
