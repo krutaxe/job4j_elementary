@@ -31,4 +31,5 @@ public class CheckTest {
         boolean result = Check.mono(data);
         Assert.assertFalse(result);
     }
+
 }
