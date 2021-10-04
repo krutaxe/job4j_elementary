@@ -7,3 +7,7 @@
 
 
 ![image of Fit](images/Fit.jpg)
+
+2. ##### Конвертер валют.
+
+![image of Converter](images/Converter.jpg)
