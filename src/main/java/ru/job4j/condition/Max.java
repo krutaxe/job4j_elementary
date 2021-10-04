@@ -8,18 +8,11 @@ public class Max {
     }
 
     public static int max(int left, int right, int up) {
-        return max(
-                left,
-                max(right, up)
-        );
+        return max(left, max(right, up));
     }
 
     public static int max(int left, int right, int up, int down) {
-        return max(
-                down,
-                max(up,
-                        max(left, right)
-                ));
+        return max(down, max(up, max(left, right)));
 
     }
 }
