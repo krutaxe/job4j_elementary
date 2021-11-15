@@ -19,8 +19,8 @@ public class Calculator {
         return b * x;
     }
 
-    public int sumAllOperation() {
-        return sum(3) + multiply(2) + minus(2) + divide(10);
+    public int sumAllOperation(int w) {
+        return sum(w) + multiply(w) + minus(w) + divide(w);
     }
 
     public static void main(String[] args) {
@@ -39,11 +39,11 @@ public class Calculator {
         System.out.println(fourTimeTwo);*/
 
        Calculator calculator = new Calculator();
-        calculator.sumAllOperation();
         minus(12);
         Calculator.minus(7);
         calculator.divide(25);
         System.out.println(calculator.multiply(5));
         System.out.println(calculator.sum(14));
+        System.out.println(calculator.sumAllOperation(40));
     }
 }
