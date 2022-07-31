@@ -1,4 +1,5 @@
 package ru.job4j.array;
+
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
@@ -26,12 +27,12 @@ class JavaNameValidatorTest {
     }
 
     @Test
-    void whenNumber$() {
+    void whenNumber1() {
         assertThat(isNameValid("fir$t")).isTrue();
     }
 
     @Test
-    void whenNumber_() {
+    void whenNumber2() {
         assertThat(isNameValid("first_")).isTrue();
     }
 
