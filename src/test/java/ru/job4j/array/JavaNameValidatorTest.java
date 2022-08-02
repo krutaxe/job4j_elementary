@@ -41,4 +41,29 @@ class JavaNameValidatorTest {
         assertThat(isNameValid("fi?rst")).isFalse();
     }
 
+    @Test
+    void whenEmptyNameInvalid() {
+        assertThat(isNameValid("")).isFalse();
+    }
+
+    @Test
+    void whenFullLatAndSomeUpperCaseLettersValid() {
+        assertThat(isNameValid("fIRST")).isTrue();
+    }
+
+    @Test
+    void whenLatWithSpecialSymbolUnderValid() {
+        assertThat(isNameValid("first_user")).isTrue();
+    }
+
+    @Test
+    void whenFirstLatinUpperCaseIsInvalid() {
+        assertThat(isNameValid("First")).isFalse();
+    }
+
+    @Test
+    void whenLatNumberAndTwoSpecialSymbolsUnderValid() {
+        assertThat(isNameValid("fir$t_u$er_1")).isTrue();
+    }
+
 }
