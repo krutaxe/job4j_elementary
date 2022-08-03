@@ -4,7 +4,8 @@ public class JavaNameValidator {
 
     public static boolean isNameValid(String name) {
         boolean valid = true;
-        if (name.isEmpty()) {
+        if (name.isEmpty() || Character.isDigit(name.codePointAt(0))
+                || Character.isUpperCase(name.codePointAt(0))) {
             return false;
         }
         for (int i = 0; i < name.length(); i++) {
@@ -16,10 +17,6 @@ public class JavaNameValidator {
             }
         }
 
-        if (Character.isDigit(name.codePointAt(0))
-                || Character.isUpperCase(name.codePointAt(0))) {
-            valid = false;
-        }
         return valid;
     }
 
