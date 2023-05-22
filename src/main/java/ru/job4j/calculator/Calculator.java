@@ -45,5 +45,6 @@ public class Calculator {
         System.out.println(calculator.multiply(5));
         System.out.println(calculator.sum(14));
         System.out.println(calculator.sumAllOperation(40));
+
     }
 }
